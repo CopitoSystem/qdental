@@ -23,6 +23,7 @@ body {
     margin: 0px;
     padding: 0px;
     letter-spacing: 0.2em;
+    margin-bottom: 10px;
 }
 
 .titulo3 {
@@ -31,7 +32,8 @@ body {
     font-weight: lighter;
     color: #96a3c0;
     vertical-align: 0%;
-    padding-top: 20px;
+    
+    display: inline;
 }
 
 
@@ -80,7 +82,7 @@ body {
 
 #col14 {
     /*width: 460px;*/
-    float: left;
+    /*float: left;*/
     padding-left: 10px;
     text-align: left;
     /*height: 350px;*/
@@ -94,6 +96,11 @@ body {
 
 #footer-info {
   column-count: 2;
+}
+
+#google iframe {
+    width: 100%;
+    max-width: 400px;
 }
 
 .copito {
@@ -149,7 +156,7 @@ body, td, th {
     background-color: #292929;
     /*width: 90%;*/
     margin-left: 3%;
+    margin-right: 3%;
   }
-
 
 }
