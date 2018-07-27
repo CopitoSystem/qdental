@@ -1,0 +1,154 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #292929;
+}
+
+
+.contenido {
+  background-color: #F9F9F9;
+}
+
+.container {
+  width: 90%;
+}
+
+.titulo1 {
+    font-size: 60px;
+    line-height: 30px;
+    color: #0492de;
+    font-weight: lighter;
+    text-transform: uppercase;
+    vertical-align: 1%;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0.2em;
+}
+
+.titulo3 {
+    font-size: 17px;
+    line-height: 1px;
+    font-weight: lighter;
+    color: #96a3c0;
+    vertical-align: 0%;
+    padding-top: 20px;
+}
+
+
+.titulo2 {
+	font-size: 34px;
+	color: #999999;
+	text-align: center;
+	border: 2px dotted grey;
+	margin-top: -3%;
+}
+
+#dobles {
+	column-count: 2;
+	width: 80%;
+	margin-bottom: 5%;
+}
+
+#dobles1 {
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+#hamburguesa {
+	display: none;
+}
+
+.collapse {
+  	display: block;
+}
+
+#telefono {
+    display: none;
+}
+
+.tratamiento {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.titulo4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #f90;
+    text-align: center;
+}
+
+#col14 {
+    /*width: 460px;*/
+    float: left;
+    padding-left: 10px;
+    text-align: left;
+    /*height: 350px;*/
+    margin-top: 20px;
+    color: #fff;
+}
+
+.main-footer {
+  background-color: #292929;
+}
+
+#footer-info {
+  column-count: 2;
+}
+
+.copito {
+  align-content: center;
+  background-color: #292929;
+  /*width: 100%;*/
+  margin-left: 5%;
+}
+
+.copito p {
+  font-size: 16px;
+}
+
+body, td, th {
+	/*font-family: Oxygen,"sans-serif;";*/
+}
+
+@media screen and (max-width: 960px) { /* width at which layout changes  */
+  #dobles {
+  	width: 100%;
+    column-count: 1;
+  }
+
+  #hamburguesa {
+  	display: inline-flex;
+  }
+
+  .collapse {
+  	display: none;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  #telefono {
+    display: inline-flex;
+    font-size: 30px;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #f90;
+    text-align: center;
+  }
+
+  #footer-info {
+    column-count: 1;
+  }
+
+  .copito {
+    align-content: center;
+    margin-top: 90px;
+    background-color: #292929;
+    /*width: 90%;*/
+    margin-left: 3%;
+  }
+
+
+}
