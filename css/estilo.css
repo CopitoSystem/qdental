@@ -7,6 +7,8 @@ body {
 
 section {
   padding: 0 0 40px 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .contenido {
@@ -135,6 +137,40 @@ section {
   margin-bottom: 10px;
   width: 35%;
 }
+
+.cmsms_simple_icon {
+    border-width: 0px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    /*color: #32dac3;*/
+    color: #0491dc;
+}
+
+.media-body {
+    text-align: center;
+}
+
+.tarjeta-titulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #373f50;
+}
+
+.text-muted p {
+  font-size: 16px;
+}
+
+.panels-row {
+  margin-bottom: 20px;
+}
+
 
 body, td, th {
 	/*font-family: Oxygen,"sans-serif;";*/
