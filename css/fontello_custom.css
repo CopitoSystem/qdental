@@ -1,0 +1,97 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Dental Clinic
+ * @version		1.0.0
+ * 
+ * Visual Content Composer Custom Icons
+ * Created by CMSMasters
+ * 
+ */
+
+@font-face {
+  font-family: 'fontello_custom';
+  src: url('fonts/fontello_custom.eot?94952921');
+  src: url('fonts/fontello_custom.eot?94952921#iefix') format('embedded-opentype'),
+       url('fonts/fontello_custom.woff?94952921') format('woff'),
+       url('fonts/fontello_custom.ttf?94952921') format('truetype'),
+       url('fonts/fontello_custom.svg?94952921#fontello_custom') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello_custom';
+    src: url('../fonts/fontello_custom.svg?94952921#fontello_custom') format('svg');
+  }
+}
+*/
+ 
+[class^="cmsms-icon-custom-"]:before, 
+[class*=" cmsms-icon-custom-"]:before {
+  font-family: "fontello_custom";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  vertical-align: baseline;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ 
+.cmsms-icon-custom-anesthesia:before { content: '\e800'; } /* '' */
+.cmsms-icon-custom-protection:before { content: '\e801'; } /* '' */
+.cmsms-icon-custom-toothbrush:before { content: '\e802'; } /* '' */
+.cmsms-icon-custom-tooth-seal:before { content: '\e803'; } /* '' */
+.cmsms-icon-custom-x-ray:before { content: '\e804'; } /* '' */
+.cmsms-icon-custom-paradonthosis:before { content: '\e805'; } /* '' */
+.cmsms-icon-custom-parodontosis:before { content: '\e806'; } /* '' */
+.cmsms-icon-custom-patient-card:before { content: '\e807'; } /* '' */
+.cmsms-icon-custom-pin-tooth:before { content: '\e808'; } /* '' */
+.cmsms-icon-custom-teeth:before { content: '\e809'; } /* '' */
+.cmsms-icon-custom-braces:before { content: '\e80a'; } /* '' */
+.cmsms-icon-custom-brush-your-teeth:before { content: '\e80b'; } /* '' */
+.cmsms-icon-custom-caries-defense:before { content: '\e80c'; } /* '' */
+.cmsms-icon-custom-certificate:before { content: '\e80d'; } /* '' */
+.cmsms-icon-custom-dentist-report:before { content: '\e80e'; } /* '' */
+.cmsms-icon-custom-healthy-tooth:before { content: '\e80f'; } /* '' */
+.cmsms-icon-custom-label:before { content: '\e810'; } /* '' */
+.cmsms-icon-custom-medical-records:before { content: '\e811'; } /* '' */
+.cmsms-icon-custom-medical-report:before { content: '\e812'; } /* '' */
+.cmsms-icon-custom-cleaned-tooth:before { content: '\e813'; } /* '' */
+.cmsms-icon-custom-cracked-tooth:before { content: '\e814'; } /* '' */
+.cmsms-icon-custom-dental-calculus:before { content: '\e815'; } /* '' */
+.cmsms-icon-custom-dental-care:before { content: '\e816'; } /* '' */
+.cmsms-icon-custom-dental-caries:before { content: '\e817'; } /* '' */
+.cmsms-icon-custom-dentist:before { content: '\e818'; } /* '' */
+.cmsms-icon-custom-instagram-with-circle:before { content: '\e819'; } /* '' */
+.cmsms-icon-custom-instagram:before { content: '\f16d'; } /* '' */
+.cmsms-icon-custom-snapchat:before { content: '\f2ab'; } /* '' */
+.cmsms-icon-custom-snapchat-ghost:before { content: '\f2ac'; } /* '' */
+.cmsms-icon-custom-snapchat-square:before { content: '\f2ad'; } /* '' */
