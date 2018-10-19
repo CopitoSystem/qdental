@@ -54,9 +54,7 @@ body {
   font-size: 16px;
 }
 
-
 section {
-  padding: 0 0 40px 0;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -67,6 +65,14 @@ section {
 
 .container {
   width: 90%;
+}
+
+.quote_image {
+    border-radius: 50%;
+    top: 130px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .titulo1 {
@@ -82,23 +88,24 @@ section {
     margin-bottom: 20px;
 }
 
+.titulo2 {
+	font-size: 22px;
+	color: #999999;
+	text-align: center;
+	border: 1px solid #e3e3e3;
+  padding: 110px 20px 40px;
+  border-radius: 6px;
+  background-color: #fafafa;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
 .titulo3 {
     font-size: 17px;
     line-height: 1px;
     font-weight: lighter;
     color: #96a3c0;
     vertical-align: 0%;
-    
     display: inline;
-}
-
-
-.titulo2 {
-	font-size: 34px;
-	color: #999999;
-	text-align: center;
-	border: 2px dotted grey;
-	margin-top: -3%;
 }
 
 #dobles {
