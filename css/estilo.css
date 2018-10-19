@@ -118,11 +118,14 @@ section {
 	column-count: 2;
 	width: 80%;
 	margin-bottom: 5%;
+  background-color: #fff;
+  padding: 20px 20px 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
 }
 
-#dobles1 {
-	margin-right: 5%;
-	margin-bottom: 5%;
+#dobles1, #dobles2{
+	margin-right: 20px;
+	margin-bottom: 40px;
 }
 
 #hamburguesa {
@@ -138,7 +141,6 @@ section {
 }
 
 .tratamiento {
-  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -238,12 +240,11 @@ section {
 .media-body {
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 10px;
 }
 
 .card-container {
-    border: 1px solid #e3e3e3;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
@@ -300,6 +301,12 @@ body, td, th {
   #dobles {
   	width: 100%;
     column-count: 1;
+  }
+
+  #dobles1, #dobles2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 0px;
   }
 
   #hamburguesa {
