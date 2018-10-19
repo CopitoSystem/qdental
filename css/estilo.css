@@ -150,11 +150,8 @@ section {
 }
 
 #col14 {
-    /*width: 460px;*/
-    /*float: left;*/
     padding-left: 10px;
-    text-align: left;
-    /*height: 350px;*/
+    text-align: center;
     margin-top: 20px;
     color: #fff;
 }
@@ -167,9 +164,9 @@ section {
   column-count: 2;
 }
 
-#google iframe {
+#google {
     width: 100%;
-    max-width: 400px;
+    text-align: center;
 }
 
 .copito {
