@@ -1,0 +1,18 @@
+{% extends "blog/all_posts.html" %}
+
+
+{% block main_title %}{{ _('All posts') }}{% endblock %}
+
+{% block all_post_menu %}
+<li class=""><a href="{{ url_for('all_posts') }}?p=0">{{ _('Drafts') }}</a></li>
+<li><a href="{{ url_for('all_posts') }}?p=1">{{ _('Published') }}</a></li>
+<li><a href="{{ url_for('all_posts') }}?p=2" class="active">{{ _('All posts') }}</a></li>
+{% endblock %}
+
+{% block posts_list %} 
+{% for post in posts %}
+        <div class="post-title"><a href="{{ url_for('edit', slug=post.slug) }}">{{ post.title }}</a></div>
+        <div class="post-date">Creado el {{ post.created_date.strftime('%h %d, %Y') }} · <span class="badge-red">{{ post.owner.username }}</span> </div>
+        <hr>
+        {% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "blog/create.html" %}
+
+{% block main_title %}{{ _('Edit your post') }}{% endblock %}
+
+{% block delete_button %}
+<p><a class="button red" href="{{ url_for('delete_post', slug=post.slug) }}" onclick="return confirm('¿Borrar artículo?');">{{ _('Delete post') }}</a></p>
+{% endblock %}
+
+{% block form_action %}{{ url_for('edit', slug=post.slug) }}{% endblock %}

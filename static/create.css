@@ -1,0 +1,435 @@
+/* CSS STYLE */
+
+body {
+    width: 100%;
+    margin: 0px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #444;
+    text-decoration: underline;
+}
+
+input {
+    height: 44px;
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #9da3a6;
+    background: #fff;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #000;
+    font-size: 16px !important;
+    font-weight: 400;
+    direction: ltr;
+}
+
+.menu {
+    width: 100%;
+    height: 65px;
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.05);
+    background-color: #fff;    
+    border-top: solid 5px rgb(6, 149, 214);
+}
+
+.menu-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu-container-inner {
+    display: inline-flex;
+    width: 100%;
+}
+
+.menu-links {
+    width: 40%;
+    text-align: right;
+}
+
+.logo {
+    width: 60%;
+}
+
+.button {
+    border-color: rgba(2, 158, 116, 1);
+    color: rgba(1, 143, 105, 1);
+    background-color: #fff;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: rgba(1, 143, 105, 1);
+    color: #fff; 
+}
+
+.black {
+    border-color: #444;
+    color: #333;
+}
+
+.black:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.red {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.red:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.green-filled {
+  background-color: rgba(1, 143, 105, 1);
+  color: #fff;
+}
+
+.green-filled:hover {
+  background-color: rgba(1, 123, 105, 1);
+  color: #fff;
+}
+
+.button-small {
+    color: #888;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.button-small:hover {
+    text-decoration: underline;
+}
+
+.green {
+  color: rgba(1, 143, 105, 1) !important;
+}
+
+.content {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 55px;
+    color: #333;
+}
+
+.header > h1 {
+    font-size: 38px;
+    letter-spacing: -2.25px;
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-buttons {
+    padding-top: 30px;
+    display: flex;  
+}
+
+.header-buttons p {
+    padding-left: 10px;
+}
+
+.menu-posts {
+    list-style: none;
+    display: inline-flex;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding-left: 0px;
+    font-weight: 400;
+    height: 26px;
+}
+
+.menu-posts li {
+    margin-right: 20px;
+}
+
+.active {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    color: #000 !important;
+}
+
+.menu-posts a {
+    text-decoration: none;
+    color: #888;
+}
+
+.menu-posts a:hover {
+    color: #000;
+}
+
+.empty {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+.post-author {
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    padding-bottom: 5px;
+}
+
+.post-date {
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #666;    
+}
+
+.post-title {
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.post-title a {
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  color: #000;
+}
+
+.tags {
+    display: inline-flex;  
+}
+
+.tags a {
+    padding: 8px 8px 8px 8px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.tags a:hover {
+    background-color: #ddd;
+}
+
+.submit-buttons {
+  display: inline-flex;
+  width: 100%;
+}
+
+.badge-red {
+  text-align: center;
+  padding: 4px 8px 4px 8px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+/* ############################### */
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgba(2, 158, 116, 1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ############################### */
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.danger {
+  background-color: #f44336; /* Red */
+}
+
+.success {
+  background-color: #4caf50; /* Green */
+}
+
+.info {
+  background-color: #2196f3; /* Blue */
+}
+
+.warning {
+  background-color: #ff9800 /* Orange */
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+} 
+
+
+/* ############################### */
+
+@media (max-width: 1080px) {
+
+    .menu-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .content {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .content {
+        width: auto;
+        padding-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+
+    .menu-links > .button-small {
+        display: none;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .header-buttons {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    .header-buttons p {
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    .submit-buttons {
+        display: block;
+    } 
+
+}

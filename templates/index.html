@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="js" lang="es">
+<html>
   <head>
 
     <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab">
@@ -19,18 +19,29 @@
     <meta property="og:title" content="Inicio">
     <meta property="og:description" content="El mejor servicio Odontológico de La Plata.">
     <meta property="og:updated_time" content="2018-07-27T14:54:20-03:00">
-    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:image" content="{{ url_for('static', filename='images/logo.jpg') }}">
     <!-- FIN CONFIGURACION METAS -->
 
     <title>QDental Consultorio Odontológico M.B.Gonnet</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/poncho.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/poncho.min.css') }}" rel="stylesheet">
     <!-- Estilo -->
-    <link href="css/estilo.css" rel="stylesheet">
-    <link href="css/fontello.css" rel="stylesheet">
-    <link href="css/fontello_custom.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/estilo.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/fontello.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/fontello_custom.css') }}" rel="stylesheet">
+	  
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137256624-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137256624-1');
+</script>
+
   
 </head>
 <body><div class="contenido">
@@ -44,8 +55,8 @@
   <div id="main-menu" class="container-fluid collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Inicio</a></li>
-      <li><a href="eugenia-quiroga-odera.html">Dra. Eugenia Quiroga Odera</a></li>
-      <li><a href="terapia-neural.html">Terapia Neural</a></li>
+      <li><a href="eugenia-quiroga-odera/">Dra. Eugenia Quiroga Odera</a></li>
+      <li><a href="blog/">Blog</a></li>
       <li><a href="#ubicacion" data-toggle="collapse" data-target="#main-menu">Ubicación</a></li>
     </ul>
   <div id="telefono-desktop" class="telefono2"><p class="cmsms-icon-phone-4"></p>Llámenos: <p id="phone-number">221-(15)4205985</p></div>
@@ -56,7 +67,7 @@
     
   <div class="container">
   
-  <div style="margin-top: 60px;"> <center><img id="logo-image" src="images/logo.jpg"><p class="titulo1">dental</p> <p class="titulo3">CONSULTORIOS ODONTOLÓGICOS</p></center></div>
+  <div style="margin-top: 60px;"> <center><img id="logo-image" src="{{ url_for('static', filename='images/logo.jpg') }}"><p class="titulo1">dental</p> <p class="titulo3">CONSULTORIOS ODONTOLÓGICOS</p></center></div>
   <br>
   <div id="telefono-divisor"><hr></div>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -70,15 +81,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="aa2.jpg" alt="Los Angeles">
+        <img src="{{ url_for('static', filename='images/aa2.jpg') }}" alt="Los Angeles">
       </div>
 
       <div class="item">
-        <img src="aa1.jpg" alt="Chicago" >
+        <img src="{{ url_for('static', filename='images/aa1.jpg') }}" alt="Chicago" >
       </div>
     
       <div class="item">
-        <img src="aa3.jpg" alt="New york" >
+        <img src="{{ url_for('static', filename='images/aa3.jpg') }}" alt="New york" >
       </div>
     </div>
 
@@ -175,7 +186,7 @@
 
 <section style="background-color: rgba(51, 122, 183, 1);">
           <div class="container" style="margin-top: -160px;"><figure class="quote_image">
-<img width="150" height="150" class="attachment-medium size-medium" style="border-radius: 50%; box-shadow: 0px 1px 1px rgba(0,0,0,0.2);" src="images/euge3.jpg"></figure>
+<img width="150" height="150" class="attachment-medium size-medium" style="border-radius: 50%; box-shadow: 0px 1px 1px rgba(0,0,0,0.2);" src="{{ url_for('static', filename='images/euge3.jpg') }}"></figure>
           <div class="titulo2" id="col10">"Es nuestra prioridad tratar a nuestros pacientes como quisiéramos ser tratados nosotros mismos." <br><div style="color: rgb(62, 62, 62); padding-top: 25px; font-size: 20px;">Dra. Eugenia Quiroga Odera</div><div style="font-size: 18px;">Odontóloga</div>
 </div>
           </div>
@@ -185,7 +196,7 @@
 
 <section>
 	<div id="dobles" class="container" >
-		<div id="dobles1"><img src="images/trauma.jpg" alt="golpe dientes trauma dental" width="400"> <br><br>
+		<div id="dobles1"><img src="{{ url_for('static', filename='images/trauma.jpg') }}" alt="golpe dientes trauma dental" width="400"> <br><br>
 			<span class="tratamiento"> TRATAMIENTO TRAUMATISMOS DENTALES</span> <br><br><span class="text-muted">Los
  traumatismos bucales pueden ocurrir por no usar la protección bucal 
 durante la práctica de ciertos deportes, por caídas, accidentes de 
@@ -197,7 +208,7 @@ acuerdo al caso.<br>
   Actualmente por reglamentación es obligatorio el uso de Protectores Bucales a modo preventivo.</span></div>
 
 
-		<div id="dobles2"><img src="images/neural.jpg" alt="terapia neural neurofocal"  width="400"> <br><br>
+		<div id="dobles2"><img src="{{ url_for('static', filename='images/neural.jpg') }}" alt="terapia neural neurofocal"  width="400"> <br><br>
 			<span class="tratamiento">TERAPIA NEURAL - ODONTOLOGIA NEUROFOCAL</span><br><br>
   <span class="text-muted">Es la parte de la Terapia Neural aplicada en la
  odontología, que toma al ser humano como un "Todo", donde la boca y los
@@ -222,12 +233,12 @@ interferencia en el flujo de la información.<br><br> Este nuevo paradigma en la
               <p class="pie"> 
                 
                 <a class="dralia-social-widget" style="text-decoration:none;" href="http://www.doctoraliar.com/medico/quiroga+odera+maria+eugenia-12455839" target="_blank" rel="publisher">
-                  <img title="Dra. María Eugenia Quiroga Odera en Doctoralia" style="border:0;width:40px;height:40px;" alt="Dra. María Eugenia Quiroga Odera en Doctoralia" src="images/logo-green-square.png">
+                  <img title="Dra. María Eugenia Quiroga Odera en Doctoralia" style="border:0;width:40px;height:40px;" alt="Dra. María Eugenia Quiroga Odera en Doctoralia" src="{{ url_for('static', filename='images/logo-green-square.png') }}">
                 </a>
-                <a href="https://www.facebook.com/quirogaodera/" target="_blank"><img width="40" height="40" title="siguenos en facebook" alt="siguenos en facebook" src="images/face.png"></a>
-                <a href="https://plus.google.com/" target="_blank"><img width="40" height="40" title="siguenos en Google+" alt="siguenos en Google+" src="images/Google2Balt.png"></a>
-                <a href="https://www.linkedin.com/in/eugenia-quiroga-odera-a4981b111/" target="_blank"><img width="40" height="40" title="Sígueme en Likedin" alt="Sígueme en Likedin" src="images/linkedin_logo_ok.png"></a> 
-                <a href="mailto:qdentalgonnet@gmail.com" target="_blank"><img width="40" height="40" title="sígueme por Correo" alt="sígueme por Correo" src="images/Mail.png"></a>
+                <a href="https://www.facebook.com/quirogaodera/" target="_blank"><img width="40" height="40" title="siguenos en facebook" alt="siguenos en facebook" src="{{ url_for('static', filename='images/face.png') }}"></a>
+                <a href="https://plus.google.com/" target="_blank"><img width="40" height="40" title="siguenos en Google+" alt="siguenos en Google+" src="{{ url_for('static', filename='images/Google2Balt.png') }}"></a>
+                <a href="https://www.linkedin.com/in/eugenia-quiroga-odera-a4981b111/" target="_blank"><img width="40" height="40" title="Sígueme en Likedin" alt="Sígueme en Likedin" src="{{ url_for('static', filename='images/linkedin_logo_ok.png') }}"></a> 
+                <a href="mailto:qdentalgonnet@gmail.com" target="_blank"><img width="40" height="40" title="sígueme por Correo" alt="sígueme por Correo" src="{{ url_for('static', filename='images/Mail.png') }}"></a>
               </p>
               <p class="pie">&nbsp;</p>
               <div class="titulo4" id="ubicacion2">Ubicacion</div>
@@ -251,7 +262,7 @@ interferencia en el flujo de la información.<br><br> Este nuevo paradigma en la
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
   </body>
 </html>

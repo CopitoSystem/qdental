@@ -1,0 +1,237 @@
+/* CSS STYLE */
+
+body {
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(255,255,255);
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+
+    padding: 0; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+a {
+    color: #444;
+    text-decoration: underline;
+}
+
+.menu {
+    width: 100%;
+    height: 65px;
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.05);
+    background-color: #fff;    
+    border-top: solid 5px rgb(6, 149, 214);
+}
+
+.menu-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu-container-inner {
+    display: inline-flex;
+    width: 100%;
+}
+
+.menu-links {
+    width: 40%;
+    text-align: right;
+}
+
+.logo {
+    width: 60%;
+}
+
+.button {
+    border-color: rgba(2, 158, 116, 1);
+    color: rgba(1, 143, 105, 1);
+    background-color: #fff;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: rgba(1, 143, 105, 1);
+    color: #fff; 
+}
+
+.black {
+    border-color: #444;
+    color: #333;
+}
+
+.black:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.button-small {
+    color: #888;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.button-small:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.description {
+    font-size: 36px;
+    letter-spacing: -0.93px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+.presentation {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 300;
+    color: #444;
+    padding-top: 10px;    
+    padding-bottom: 30px;
+}
+
+.face-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+.face-picture-small {
+    display: none;
+}
+
+.posts-details {
+    padding: 24px 24px 24px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.post-info {
+    display: inline-flex;
+    padding-bottom: 30px;
+}
+
+.post-info > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.post-author {
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #666;    
+}
+
+.post-image {
+    max-width: 650px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.post-title {
+    color: #000;
+    text-decoration: none;
+}
+
+.post-title > h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post-title h1:hover {
+    text-decoration: underline !important;
+    color: #444;
+}
+
+.post-description {
+    padding-bottom: 30px;
+}
+
+.post-description:hover {
+    color: #444;
+}
+
+.post-comments {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ############################################### */
+
+.pager{padding-left:0;margin:25px 0;list-style:none;text-align:center}.pager li{display:inline}.pager li>a,.pager li>span{display:inline-block;padding:5px 14px;background-color:#fff;border:1px solid #ddd;border-radius:0}.pager li>a:hover,.pager li>a:focus{text-decoration:none;background-color:#e6e6e6}.pager .next>a,.pager .next>span{float:right}.pager .previous>a,.pager .previous>span{float:left}.pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span{color:#999;background-color:#fff;cursor:not-allowed}
+
+/* ############################################### */
+
+@media (max-width: 768px) {
+
+    .menu-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .content {
+        width: auto;
+        padding-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+
+    .menu-links > .button-small {
+        display: none;
+    }
+
+    .face-picture-small {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .face-picture {
+        display: none;
+    }
+
+    .presentation {
+        font-size: 16px;
+    }
+
+}

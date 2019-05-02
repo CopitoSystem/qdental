@@ -1,0 +1,60 @@
+{% extends "blog/base.html" %}
+
+{% block title %}{{ _('Creator panel') }}{% endblock %}
+{% block head %}
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<div class="content">
+      <div class="header">
+        <h1>{% block main_title %}
+        {% if published %}
+          {{ _('Your posts') }}
+        {% else %}
+          {{ _('Your drafts') }}
+        {% endif %}
+      {% endblock %}</h1>
+        <div class="header-buttons">
+          <p><a class="button black" href="#">{{ _('Import a story') }}</a></p>
+          <p><a class="button" href="{{ url_for('create') }}">{{ _('Write a post') }}</a></p></p>
+        </div>
+      </div>
+      <ul class="menu-posts">
+        {% block all_post_menu %}
+        <li class=""><a href="{{ url_for('all_posts') }}?p=0" {% if not published %}class="active"{% endif %}>{{ _('Drafts') }}</a></li>
+        <li><a href="{{ url_for('all_posts') }}?p=1" {% if published %}class="active"{% endif %}>{{ _('Published') }}</a></li>
+        {% if session.user_level == 1 %}
+        <li><a href="{{ url_for('all_posts') }}?p=2">{{ _('All posts') }}</a></li>
+        {% endif %}
+        {% endblock %}
+      </ul>
+      {% for category, message in get_flashed_messages(with_categories=true) %}
+      <div class="alert {{ category }}">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        {{ message }}
+      </div>
+      {% endfor %}
+      <div class="empty">
+        {% if not posts %}
+        <p>{{ _('You have no posts') }}</p>
+        <p>{{ _('Start writting by click the button in the right top corner') }}</p>
+        {% endif %}
+      </div>
+      <div class="posts-list">
+        {% block posts_list %}
+        {% for post in posts %}
+        <div class="post-title"><a href="{{ url_for('edit', slug=post.slug) }}">{{ post.title }}</a></div>
+        <div class="post-date">Created on {{ post.created_date.strftime('%h %d, %Y') }} · 2 min read </div>
+        <hr>
+        {% endfor %}
+        {% endblock %}
+      </div>
+    </div>
+    <br><br><br><br><br><br><br>
+{% endblock %}
+

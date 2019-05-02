@@ -1,0 +1,140 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-05-02 20:25-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: templates/404.html:10
+msgid "Oops.. You just found an error page.."
+msgstr ""
+
+#: templates/404.html:11
+msgid "We are sorry but our service is currently not available..."
+msgstr ""
+
+#: templates/login.html:22
+msgid "Login to your account"
+msgstr ""
+
+#: templates/login.html:24
+msgid "Username"
+msgstr ""
+
+#: templates/login.html:25
+msgid "Enter username"
+msgstr ""
+
+#: templates/login.html:28 templates/login.html:29
+msgid "Password"
+msgstr ""
+
+#: templates/blog/base.html:21 templates/login.html:33
+msgid "Sign in"
+msgstr ""
+
+#: templates/blog/all_posts.html:3
+msgid "Creator panel"
+msgstr ""
+
+#: templates/blog/all_posts.html:17
+msgid "Your posts"
+msgstr ""
+
+#: templates/blog/all_posts.html:19
+msgid "Your drafts"
+msgstr ""
+
+#: templates/blog/all_posts.html:23
+msgid "Import a story"
+msgstr ""
+
+#: templates/blog/all_posts.html:24 templates/blog/create.html:22
+msgid "Write a post"
+msgstr ""
+
+#: templates/blog/all_posts.html:29 templates/blog/all_posts_admin.html:7
+msgid "Drafts"
+msgstr ""
+
+#: templates/blog/all_posts.html:30 templates/blog/all_posts_admin.html:8
+msgid "Published"
+msgstr ""
+
+#: templates/blog/all_posts.html:32 templates/blog/all_posts_admin.html:4
+#: templates/blog/all_posts_admin.html:9
+msgid "All posts"
+msgstr ""
+
+#: templates/blog/all_posts.html:44
+msgid "You have no posts"
+msgstr ""
+
+#: templates/blog/all_posts.html:45
+msgid "Start writting by click the button in the right top corner"
+msgstr ""
+
+#: templates/blog/base.html:16
+msgid "Logout"
+msgstr ""
+
+#: templates/blog/base.html:18
+msgid "Admin panel"
+msgstr ""
+
+#: templates/blog/base.html:22
+msgid "Home"
+msgstr ""
+
+#: templates/blog/create.html:18
+msgid "Write your post"
+msgstr ""
+
+#: templates/blog/create.html:33
+msgid "Your post title"
+msgstr ""
+
+#: templates/blog/create.html:37
+msgid "Publish"
+msgstr ""
+
+#: templates/blog/create.html:42
+msgid "Save changes"
+msgstr ""
+
+#: templates/blog/create.html:43
+msgid "Cancel"
+msgstr ""
+
+#: templates/blog/detail.html:46
+msgid "Responses"
+msgstr ""
+
+#: templates/blog/edit.html:3
+msgid "Edit your post"
+msgstr ""
+
+#: templates/blog/edit.html:6
+msgid "Delete post"
+msgstr ""
+
+#: templates/blog/index.html:24
+msgid "Latest Posts"
+msgstr ""
+
+#: templates/blog/index.html:39
+msgid "comments"
+msgstr ""
+

@@ -1,0 +1,147 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-05-02 20:25-0300\n"
+"PO-Revision-Date: 2019-05-02 20:27-0300\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#: templates/404.html:10
+msgid "Oops.. You just found an error page.."
+msgstr "Oops… Encontraste una página de error..."
+
+#: templates/404.html:11
+msgid "We are sorry but our service is currently not available..."
+msgstr "Lo sentimos pero nuestro servicio no se encuentra disponible..."
+
+#: templates/login.html:22
+msgid "Login to your account"
+msgstr "Iniciar sesión a tu cuenta"
+
+#: templates/login.html:24
+msgid "Username"
+msgstr "Usuario"
+
+#: templates/login.html:25
+msgid "Enter username"
+msgstr "Introducir usuario"
+
+#: templates/login.html:28 templates/login.html:29
+msgid "Password"
+msgstr "Contraseña"
+
+#: templates/blog/base.html:21 templates/login.html:33
+msgid "Sign in"
+msgstr "Iniciar sesión"
+
+#: templates/blog/all_posts.html:3
+msgid "Creator panel"
+msgstr "Panel de administrador"
+
+#: templates/blog/all_posts.html:17
+msgid "Your posts"
+msgstr "Tus artículos"
+
+#: templates/blog/all_posts.html:19
+msgid "Your drafts"
+msgstr "Tus borradores"
+
+#: templates/blog/all_posts.html:23
+msgid "Import a story"
+msgstr "Importar artículo"
+
+#: templates/blog/all_posts.html:24 templates/blog/create.html:22
+msgid "Write a post"
+msgstr "Escribir artículo"
+
+#: templates/blog/all_posts.html:29 templates/blog/all_posts_admin.html:7
+msgid "Drafts"
+msgstr "Borradores"
+
+#: templates/blog/all_posts.html:30 templates/blog/all_posts_admin.html:8
+msgid "Published"
+msgstr "Publicado"
+
+#: templates/blog/all_posts.html:32 templates/blog/all_posts_admin.html:4
+#: templates/blog/all_posts_admin.html:9
+msgid "All posts"
+msgstr "Todos los artículos"
+
+#: templates/blog/all_posts.html:44
+msgid "You have no posts"
+msgstr "No has creado artículos aún"
+
+#: templates/blog/all_posts.html:45
+msgid "Start writting by click the button in the right top corner"
+msgstr "Comienza a escribir presionando el botón en la esquina superior derecha"
+
+#: templates/blog/base.html:16
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: templates/blog/base.html:18
+msgid "Admin panel"
+msgstr "Panel de administrador"
+
+#: templates/blog/base.html:22
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/blog/create.html:18
+msgid "Write your post"
+msgstr "Escribir artículo"
+
+#: templates/blog/create.html:33
+msgid "Your post title"
+msgstr "El título de tu artículo"
+
+#: templates/blog/create.html:37
+msgid "Publish"
+msgstr "Publicar"
+
+#: templates/blog/create.html:42
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: templates/blog/create.html:43
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: templates/blog/detail.html:46
+msgid "Responses"
+msgstr "Comentarios"
+
+#: templates/blog/edit.html:3
+msgid "Edit your post"
+msgstr "Edita tu artículo"
+
+#: templates/blog/edit.html:6
+msgid "Delete post"
+msgstr "Eliminar artículo"
+
+#: templates/blog/index.html:24
+msgid "Latest Posts"
+msgstr "Últimas publicaciones"
+
+#: templates/blog/index.html:39
+msgid "comments"
+msgstr "comentarios"
+
+#~ msgid "<h3>Not found</h3>"
+#~ msgstr "<h3>No encontrado</h3>"
+
+#~ msgid "Get started"
+#~ msgstr "Comenzar"

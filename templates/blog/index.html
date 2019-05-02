@@ -1,0 +1,46 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Blog{% endblock %}
+{% block head %}
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='blog.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<div class="content">
+  {% for post in object_list[:1] %}{% if post.owner.user_level == 1 %}
+  <img class="face-picture-small" src="{{ url_for('static', filename='images/'+post.owner.avatar_file) }}"> 
+  <div class="description">{{ post.owner.username }}</div>
+  <div style="display: inline-flex; width: 100%;">
+    <div class="presentation">{{ post.html_user_description }}</div>
+    <img class="face-picture" src="{{ url_for('static', filename='images/'+post.owner.avatar_file) }}"> 
+  </div>
+  {% endif %}{% endfor %}
+  <hr>
+  <div class="post-list">
+    <h4>{{ _('Latest Posts') }}</h4>
+    {% for post in object_list %}
+    <div class="posts-details">
+      <div class="post-info">
+        <img src="{{ url_for('static', filename='images/'+post.owner.avatar_file) }}">
+        <div>
+          <div class="post-author">{{ post.owner.username }}</div>
+          <div class="post-date">{{ post.created_date.strftime('%h %d, %Y') }} · 5 min read</div>
+        </div>
+      </div>
+      
+      <a class="post-title" href="{{ url_for('detail', slug=post.slug) }}">
+        <h1>{{ post.title }}</h1>
+        <div class="post-description">{{ post.content.split('<!-- more -->')[0] }}</div>
+      </a>
+      <div class="post-comments">{{ post.comments_count }} {{ _('comments') }}</div>
+    </div>
+    {% endfor %}
+    
+{% include "blog/includes/pagination.html" %}
+  </div>
+</div>
+{% endblock %}

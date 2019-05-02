@@ -1,0 +1,52 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Post{% endblock %}
+{% block head %}
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='post.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hilite.css') }}">
+ 
+{% endblock %}
+
+
+{% block content %}
+<div class="content">        
+        <div class="post-content">
+          <h1>{{ post.title }}</h1>
+          <div class="post-info">
+              <img src="{{ url_for('static', filename='images/'+post.owner.avatar_file) }}">
+              <div>
+                <div class="post-author">{{ post.owner.username }}</div>
+                <div class="post-date">{{ post.created_date.strftime('%h %d, %Y') }} · 5 min read</div>
+              </div>
+          </div>
+          <div class="posts-details">
+            {{ post.html_content }}
+          </div>
+        </div>
+        <div class="tags">
+          <a href="">Odontología</a>
+          <a href="">Dentista</a>
+          <a href="">Tips</a>
+        </div>
+        <hr>
+        <div class="post-info-footer">
+              <img src="{{ url_for('static', filename='images/'+post.owner.avatar_file) }}">
+              <div>
+                <div class="post-author-footer">{{ post.owner.username }}</div>
+                <div class="post-date" style="font-size: 14px;">{{ post.html_user_description }}</div>
+              </div>
+          </div>
+        <br><br><br><br>
+        <div class="comments">
+          <h4 style="font-family: 'Roboto',sans-serif;">{{ _('Responses') }}</h4><br>
+          <!-- COMMENTS -->
+        </div>
+        <br><br><br><br><br><br><br><br>
+
+{% endblock %}
+

@@ -1,0 +1,54 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Editor{% endblock %}
+{% block head %}
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create.css') }}">
+<!-- MARKDOWN EDITOR -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+{% endblock %}
+
+
+{% block content %}
+<div class="content">
+      <div class="header">
+        <h1>{% block main_title %}{{ _('Write your post') }}{% endblock %}</h1>
+        <div class="header-buttons">
+          <p><a class="button black" href="https://imgur.com/upload" target="_blank">Subir imagen</a></p>
+          {% block delete_button %}{% endblock %}
+          <p><a class="button" href="{{ url_for('create') }}">{{ _('Write a post') }}</a></p>
+        </div>
+      </div>
+      {% for category, message in get_flashed_messages(with_categories=true) %}
+      <div class="alert {{ category }}">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        {{ message }}
+      </div>
+      {% endfor %}
+      <br><br>
+      <form method="POST" action="{% block form_action %}{{ url_for('create') }}{% endblock %}">
+        <input name="title" type="text" placeholder="{{ _('Your post title') }}" required="required" value="{{ post.title }}">
+        <input name="owner" type="text" value="{{ post.owner.id }}" hidden="hidden">
+        <br><br>
+        <textarea name="content">{{ post.content }}</textarea>
+        <label class="container">{{ _('Publish') }}
+          <input name="published" type="checkbox" value="y" {% if post.published %} checked="checked"{% endif %}>
+          <span class="checkmark"></span>
+        </label>
+        <div class="submit-buttons">
+          <input type="submit" class="button green-filled" value="{% block save_button %}{{ _('Save changes') }}{% endblock %}" style="max-width: 300px;">
+          <p><a href="{{ url_for('all_posts') }}" class="button-small" style="padding-left: 20px; color: #333;">{{ _('Cancel') }}</a></p>
+        </div>
+      </form>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <script>
+          // Most options demonstrate the non-default behavior
+          var simplemde = new SimpleMDE({
+            showIcons: ["code", "table", "|", "strikethrough", "horizontal-rule"]
+          });
+    </script>
+{% endblock %}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="js" lang="es">
+<html>
   <head>
 
     <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab">
@@ -19,23 +19,32 @@
     <meta property="og:title" content="Inicio">
     <meta property="og:description" content="El mejor servicio Odontológico de La Plata.">
     <meta property="og:updated_time" content="2018-07-27T14:54:20-03:00">
-    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:image" content="{{ url_for('static', filename='images/logo.jpg') }}">
     <!-- FIN CONFIGURACION METAS -->
 
     <title>QDental Consultorio Odontológico M.B.Gonnet</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/poncho.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/poncho.min.css') }}" rel="stylesheet">
     <!-- Estilo -->
-    <link href="css/estilo.css" rel="stylesheet">
-    <link href="css/fontello.css" rel="stylesheet">
-    <link href="css/fontello_custom.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet"> 
+    <link href="{{ url_for('static', filename='css/estilo.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/fontello.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/fontello_custom.css') }}" rel="stylesheet">
+	  
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137256624-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137256624-1');
+</script>
+
   
 </head>
 <body><div class="contenido">
-
 
 <nav class="navbar navbar-default" >
 	<div id="hamburguesa" style="width: 100%;">
@@ -44,9 +53,9 @@
   </div>
   <div id="main-menu" class="container-fluid collapse">
     <ul class="nav navbar-nav">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="eugenia-quiroga-odera.html">Dra. Eugenia Quiroga Odera</a></li>
-      <li class="active"><a href="#">Terapia Neural</a></li>
+      <li><a href="/">Inicio</a></li>
+      <li  class="active"><a href="#">Dra. Eugenia Quiroga Odera</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="#ubicacion">Ubicación</a></li>
     </ul>
     <div id="telefono-desktop" class="telefono2"><p class="cmsms-icon-phone-4"></p>Llámenos: <p id="phone-number">221-(15)4205985</p></div>
@@ -57,19 +66,27 @@
     
   <div class="container">
   
-  <div style="margin-top: 60px;"> <center><img id="logo-image" src="images/logo.jpg"><p class="titulo1">dental</p> <p class="titulo3">CONSULTORIOS ODONTOLÓGICOS</p></center></div>
+  <div style="margin-top: 60px;"> <center><img id="logo-image" src="{{ url_for('static', filename='images/logo.jpg') }}"><p class="titulo1">dental</p> <p class="titulo3">CONSULTORIOS ODONTOLÓGICOS</p></center></div>
   <br>
   
 <hr>
-<section> 
+<section>
           <div class="container" style="font-family: 'Fira Sans Condensed', sans-serif; font-size: 18px">
-            <h1>Terapia Neural</h1>
             <div id="profesional-container">
-            <img src="images/terapia-neural.jpg" id="profesional"></div>
-            La Terapia Neural y Odontológica Neurofocal es una rama de la Medicina Biológica, tambien llamada "Acupuntura Alemana", la cual considera al organismo como un todo.
-            <br>
-            <br>
-            Nuestras emociones pueden manifestarse con síntomas y/o enfermedades, desequilibrando el cuerpo. La Terapia Neural viene a estimular al Sistema Nervioso Autónomo para generar una Autoregulación del sistema.
+            <img id="profesional" src="{{ url_for('static', filename='images/euge3.jpg') }}">
+            <p>Dra. EUGENIA QUIROGA ODERA<br>MP 13381 - MN 26360</p></div>
+            <hr>
+            <div style='font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;'>
+            <p>
+            Soy platense, egresada del Bachillerato de Bellas Artes en 1990. Odontóloga, egresada de la Facultad de Odontología de la Universidad Nacional de La Plata en 1995.</p>
+<p>
+Mi formación artística de base me inclina a buscar la armonía entre salud y estética para mis pacientes, a través de la rehabilitación implanto-protética y las técnicas de Ortodoncia que en la actualidad otorgan excelentes resultados. Comencé trabajando en el año 1994 Ad Honorem en el Hospital Sor María Ludovica (Htal. de Niños de La Plata) y desde entonces ejerzo con entusiasmo porque amo mi profesión.</p>
+
+<p>
+Viví 5 años en el extranjero, experiencia enriquecedora profesional y personalmente. De regreso a Argentina tuve el honor de formar parte de la Cátedra de Endodoncia como Jefa de Trabajos Prácticos en la Universidad John F. Kennedy y en la UCALP (Universidad Católica de La Plata) a cargo del Dr. Enrique Massone y la Dra. Teresa Cañete.</p> 
+
+<p>
+Actualmente trabajo en la localidad de Gonnet, en la ciudad de La Plata y en Capital Federal.</p></div>
           </div>
         </section>
 </div></div>
@@ -119,7 +136,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
   </body>
 </html>
