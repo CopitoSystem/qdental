@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-02 20:25-0300\n"
+"POT-Creation-Date: 2019-05-03 12:17-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,22 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+
+#: views.py:117
+msgid "Title and Content are required."
+msgstr ""
+
+#: views.py:125
+msgid "Choose another title"
+msgstr ""
+
+#: views.py:127
+msgid "Error: this title is already in use."
+msgstr ""
+
+#: views.py:129
+msgid "Post created successfully."
+msgstr ""
 
 #: templates/404.html:10
 msgid "Oops.. You just found an error page.."

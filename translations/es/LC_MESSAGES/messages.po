@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-02 20:25-0300\n"
-"PO-Revision-Date: 2019-05-02 20:27-0300\n"
+"POT-Creation-Date: 2019-05-03 12:17-0300\n"
+"PO-Revision-Date: 2019-05-03 12:27-0300\n"
 "Last-Translator: \n"
 "Language: es\n"
 "Language-Team: es <LL@li.org>\n"
@@ -18,6 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 "X-Generator: Poedit 2.2.1\n"
+
+#: views.py:117
+msgid "Title and Content are required."
+msgstr "Título y Contenido requerido."
+
+#: views.py:125
+msgid "Choose another title"
+msgstr "Elige otro título\v"
+
+#: views.py:127
+msgid "Error: this title is already in use."
+msgstr "Error: este título ya está en uso."
+
+#: views.py:129
+msgid "Post created successfully."
+msgstr "Artículo creado exitosamente."
 
 #: templates/404.html:10
 msgid "Oops.. You just found an error page.."
@@ -126,7 +142,7 @@ msgstr "Comentarios"
 
 #: templates/blog/edit.html:3
 msgid "Edit your post"
-msgstr "Edita tu artículo"
+msgstr "Editá tu artículo"
 
 #: templates/blog/edit.html:6
 msgid "Delete post"
