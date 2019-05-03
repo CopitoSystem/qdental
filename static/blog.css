@@ -54,8 +54,8 @@ a {
 }
 
 .button {
-    border-color: rgba(2, 158, 116, 1);
-    color: rgba(1, 143, 105, 1);
+    border-color: rgb(6, 149, 214);
+    color: rgb(3, 123, 178);
     background-color: #fff;
     cursor: pointer;
     border-width: 1px;
@@ -67,7 +67,7 @@ a {
 }
 
 .button:hover {
-    background-color: rgba(1, 143, 105, 1);
+    background-color: rgb(6, 149, 214);
     color: #fff; 
 }
 
