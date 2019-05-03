@@ -30,7 +30,7 @@
       {% endfor %}
       <br><br>
       <form method="POST" action="{% block form_action %}{{ url_for('create') }}{% endblock %}">
-        <input name="title" type="text" placeholder="{{ _('Your post title') }}" required="required" value="{{ post.title }}">
+        <input name="title" type="text" placeholder="{{ _('Your post title') }}" required="required" value="{{ post.title }}" autocomplete="off">
         <input name="owner" type="text" value="{{ post.owner.id }}" hidden="hidden">
         <br><br>
         <textarea name="content">{{ post.content }}</textarea>
@@ -48,7 +48,8 @@
     <script>
           // Most options demonstrate the non-default behavior
           var simplemde = new SimpleMDE({
-            showIcons: ["code", "table", "|", "strikethrough", "horizontal-rule"]
+            showIcons: ["code", "table", "|", "strikethrough", "horizontal-rule"],
+            spellChecker: false
           });
     </script>
 {% endblock %}
