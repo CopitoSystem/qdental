@@ -33,7 +33,7 @@ def create_tables():
 def populate_database():
     # INSERT new row
     password_string = hash_password('123')
-    User.create(username='Eugenia',email='aaa@gmail.com',password=password_string,description='Sin descripcion',user_level=1)
+    User.create(username='Eugenia',email='aaa@gmail.com',password=password_string,description='Soy odontóloga platense 👩‍⚕️ - Actualmente trabajando en La Plata y Ushuaia - @EugeniaQuiroga',user_level=1)
     Post.create(title='Prueba',slug='prueba',content='heheh este es el post',published=1,owner_id=1)
     #Comment.create(commented_in_id='1',description='Primer comentario',reply_to=0)
     #Comment.create(commented_in_id='1',description='Segundo comentario 2',reply_to=0)
