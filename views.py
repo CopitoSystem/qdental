@@ -114,7 +114,7 @@ def _create_or_edit(post, template):
         # Keep post owner when editing
         post.owner = request.form.get('owner')
         if not (post.title and post.content):
-            flash('Title and Content are required.', 'danger')
+            flash(_('Title and Content are required.'), 'danger')
         else:
             # Wrap the call to save in a transaction so we can roll it back
             # cleanly in the event of an integrity error.
@@ -122,11 +122,11 @@ def _create_or_edit(post, template):
                 with db.atomic():
                     post.save()
             except AssertionError: # Prohibited title
-                flash('Choose another title', 'danger')  
+                flash(_('Choose another title'), 'danger')  
             except IntegrityError:
-                flash('Error: this title is already in use.', 'danger')
+                flash(_('Error: this title is already in use.'), 'danger')
             else:
-                flash('Post created successfully.', 'success')
+                flash(_('Post created successfully.'), 'success')
                 if post.published:
                     return redirect(url_for('all_posts'))
                 else:
