@@ -10,7 +10,7 @@
     <div class="menu">
       <div class="menu-container">
         <div class="menu-container-inner">
-          <div class="logo"><a href="{{ url_for('blog') }}"><img src="{{ url_for('static', filename='images/pictoapi/logo.png') }}" style="height: 2rem;"></a></div>
+          <div class="logo"><a href="{{ url_for('blog') }}"><img src="{{ url_for('static', filename='images/pictoapi/logo.png') }}" style="height: 3rem;"></a></div>
           <div class="menu-links">
             {% if session.logged_in %}
             <a class="button-small" href="{{ url_for('logout') }}">{{ _('Logout') }}</a>

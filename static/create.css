@@ -73,6 +73,7 @@ input {
 
 .logo {
     width: 60%;
+    margin-top: -10px;
 }
 
 .button {
@@ -411,6 +412,10 @@ input {
 
     .menu-links > .button-small {
         display: none;
+    }
+
+    .menu-links > .button {
+        font-size: 10px;
     }
 
     .header {
