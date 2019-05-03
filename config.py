@@ -21,12 +21,12 @@ class DevelopmentConfig(Config):
 
     # The playhouse.flask_utils.FlaskDB object accepts database URL configuration.
     DATABASE = 'sqliteext:///{0}'.format(os.path.join(APP_DIR, 'blog.db'))
-    #For mor info - http://docs.peewee-orm.com/en/latest/peewee/database.html
-    #DATABASE = 'mysql://sql10286321:AgDZpM5Eer@sql10.freemysqlhosting.net:3306/sql10286321'
-
+    
         
 class ProductionConfig(Config):
     DEVELOPMENT = False
     DEBUG = False
     DB_HOST = 'my.production.database' # not a docker link
+    #For mor info - http://docs.peewee-orm.com/en/latest/peewee/database.html
+    DATABASE = 'mysql://sql10286321:AgDZpM5Eer@sql10.freemysqlhosting.net:3306/sql10286321'
 
