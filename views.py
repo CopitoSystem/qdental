@@ -151,7 +151,7 @@ def all_posts():
         query = Post.posts_by_user_id(userid,published)
     elif request.args.get('p') == '2' and session.get('user_level') == 1: # All published posts
         published = True
-        query = Post.get_public_with_authors()
+        query = Post.get_public_with_authors().order_by(Post.created_date.desc())
         return render_template ('blog/all_posts_admin.html', posts=query, published=published)
     else:
         published = True
