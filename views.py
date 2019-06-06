@@ -83,9 +83,8 @@ def logout():
 @app.route('/blog/', methods=['GET','POST'])
 def blog():
     query = Post.get_public_with_authors().order_by(Post.created_date.desc())
-    #return render_template('index.html', posts=query)
-    #return render_template('blog/index.html')
-    return object_list('blog/index.html', query, paginate_by=20)
+    admin = User.select().where(User.id==1).get()
+    return object_list('blog/index.html', query, paginate_by=20, admin=admin)
 
 
 @app.template_filter('clean_querystring')

@@ -11,14 +11,13 @@
 
 {% block content %}
 <div class="content">
-  {% for post in object_list[:1] %}{% if post.owner.user_level == 1 %}
-  <img class="face-picture-small" src="{{ url_for('static', filename='images/'+post.owner.avatar_file) }}"> 
-  <div class="description">{{ post.owner.username }}</div>
+  <img class="face-picture-small" src="{{ url_for('static', filename='images/'+admin.avatar_file) }}"> 
+  <div class="description">{{ admin.username }}</div>
   <div style="display: inline-flex; width: 100%;">
-    <div class="presentation">{{ post.html_user_description }}</div>
-    <img class="face-picture" src="{{ url_for('static', filename='images/'+post.owner.avatar_file) }}"> 
+    <div class="presentation">{{ admin.description }}</div>
+    <img class="face-picture" src="{{ url_for('static', filename='images/'+admin.avatar_file) }}"> 
   </div>
-  {% endif %}{% endfor %}
+
   <hr>
   <div class="post-list">
     <h4>{{ _('Latest Posts') }}</h4>
