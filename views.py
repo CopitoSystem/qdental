@@ -40,6 +40,7 @@ def get_locale():
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
     ip=request.environ['REMOTE_ADDR']
+    ip=request.headers.get('X-Forwarded-For', request.remote_addr) 
     flash(ip,'danger')
     failed_attemps = FailedLogin.get_count_by_ip_minutes(ip,15)
     if failed_attemps >= 3:
@@ -136,7 +137,8 @@ def _create_or_edit(post, template):
     try:
         assert(post.owner)
     except:
-        post.owner = User.id#model_to_dict(User.get_id_by_username(session.get('username')).get())['id']
+        #post.owner = User.id#model_to_dict(User.get_id_by_username(session.get('username')).get())['id']
+        post.owner = User.get_id_by_username(session.get('username')).get().id
     return render_template(template, post=post)
 
 
