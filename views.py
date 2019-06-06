@@ -39,7 +39,9 @@ def get_locale():
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
-    failed_attemps = FailedLogin.get_count_by_ip_minutes('192.168.1.1',15)
+    ip=request.environ['REMOTE_ADDR']
+    flash(ip,'danger')
+    failed_attemps = FailedLogin.get_count_by_ip_minutes(ip,15)
     if failed_attemps >= 3:
         abort(404)
     next_url = request.args.get('next') or request.form.get('next')
@@ -60,12 +62,12 @@ def login():
                 return redirect(next_url or url_for('blog'))
             else:
                 #failed_attemps = FailedLogin.get_count_by_ip_minutes('192.168.1.1',15)
-                flash(('Incorrect login credentials. Failed {0} times.').format(failed_attemps), 'danger')
-                FailedLogin.create(user_ip='192.168.1.1')
+                flash(('Credenciales incorrectas. Has fallado {0} veces.').format(failed_attemps), 'danger')
+                FailedLogin.create(user_ip=ip)
         except Exception as e: # User doesn't exist
-            failed_attemps = FailedLogin.get_count_by_ip_minutes('192.168.1.1',15)
-            flash(('Incorrect login credentials. Failed {0} times.').format(failed_attemps), 'danger')
-            FailedLogin.create(user_ip='192.168.1.1')
+            failed_attemps = FailedLogin.get_count_by_ip_minutes(ip,15)
+            flash(('Credenciales incorrectas. Has fallado {0} veces.').format(failed_attemps), 'danger')
+            FailedLogin.create(user_ip=ip)
     return render_template('login.html', next_url=next_url)
 
 
