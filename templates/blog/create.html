@@ -19,7 +19,6 @@
         <div class="header-buttons">
           <p><a class="button black" href="https://imgur.com/upload" target="_blank">Subir imagen</a></p>
           {% block delete_button %}{% endblock %}
-          <p><a class="button" href="{{ url_for('create') }}">{{ _('Write a post') }}</a></p>
         </div>
       </div>
       {% for category, message in get_flashed_messages(with_categories=true) %}
