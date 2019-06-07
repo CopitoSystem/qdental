@@ -21,7 +21,7 @@ class DevelopmentConfig(Config):
 
     # The playhouse.flask_utils.FlaskDB object accepts database URL configuration.
     DATABASE = 'sqliteext:///{0}'.format(os.path.join(APP_DIR, 'blog.db'))
-    #DEBUG = False
+    DEBUG = False
 
         
 class ProductionConfig(Config):

@@ -39,9 +39,10 @@ def get_locale():
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
-    ip=request.environ['REMOTE_ADDR']
-    ip=request.headers.get('X-Forwarded-For', request.remote_addr) 
-    flash(ip,'danger')
+    #ip=request.environ['REMOTE_ADDR']
+    #ip=request.headers.get('X-Forwarded-For', request.remote_addr) 
+    ip=request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
+    #flash(ip,'danger')
     failed_attemps = FailedLogin.get_count_by_ip_minutes(ip,15)
     if failed_attemps >= 3:
         abort(404)
