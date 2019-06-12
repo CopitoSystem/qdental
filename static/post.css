@@ -144,6 +144,10 @@ a {
     padding-bottom: 10px;
 }
 
+.posts-details img {
+    width: 100%;
+}
+
 .post-info {
     display: inline-flex;
     padding-bottom: 30px;
