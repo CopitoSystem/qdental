@@ -395,7 +395,7 @@ input {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 960px) { /* width at which layout changes  */
 
     .menu-container {
         width: 90%;
