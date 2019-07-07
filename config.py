@@ -12,6 +12,7 @@ class Config(object):
     THREADED = True
     SITE_NAME = 'Qdental' # Name of the blog
     SITE_WIDTH = 700
+    TEMPLATES_AUTO_RELOAD = True
 
 class DevelopmentConfig(Config):
     # You may consider using a one-way hash to generate the password, and then
