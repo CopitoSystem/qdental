@@ -1,5 +1,17 @@
 {% extends "blog/base.html" %}
 
+{% block metas %}
+<!-- INICIO CONFIGURACION METAS -->
+<meta name="description" content="El mejor servicio Odontológico de La Plata.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="QDental.com.ar">
+<meta property="og:url" content="http://qdental.com.ar">
+<meta property="og:title" content="Inicio">
+<meta property="og:description" content="El mejor servicio Odontológico de La Plata.">
+<meta property="og:image" content="{{ url_for('static', filename='images/logo.jpg') }}">
+<!-- FIN CONFIGURACION METAS -->
+{% endblock %}
+
 {% block title %}Blog{% endblock %}
 {% block head %}
 <meta charset="utf-8">

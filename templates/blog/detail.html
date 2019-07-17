@@ -1,5 +1,17 @@
 {% extends "blog/base.html" %}
 
+{% block metas %}
+<!-- INICIO CONFIGURACION METAS -->
+<meta name="description" content="{{ post.content.split('<!-- more -->')[0] }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="QDental.com.ar">
+<meta property="og:url" content="http://qdental.com.ar{{ url_for('detail', slug=post.slug) }}">
+<meta property="og:title" content="{{ post.title }}">
+<meta property="og:description" content="{{ post.content.split('<!-- more -->')[0] }}">
+<meta property="og:image" content="{{ url_for('static', filename='images/logo.jpg') }}">
+<!-- FIN CONFIGURACION METAS -->
+{% endblock %}
+
 {% block title %}{{ post.title }}{% endblock %}
 {% block head %}
 <meta charset="utf-8">
