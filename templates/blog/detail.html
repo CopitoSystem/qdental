@@ -3,12 +3,18 @@
 {% block metas %}
 <!-- INICIO CONFIGURACION METAS -->
 <meta name="description" content="{{ post.content.split('<!-- more -->')[0] }}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="QDental.com.ar">
 <meta property="og:url" content="http://qdental.com.ar{{ url_for('detail', slug=post.slug) }}">
 <meta property="og:title" content="{{ post.title }}">
 <meta property="og:description" content="{{ post.content.split('<!-- more -->')[0] }}">
 <meta property="og:image" content="{{ url_for('static', filename='images/logo.jpg') }}">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ post.title }}">
+<meta name="twitter:description" content="{{ post.content.split('<!-- more -->')[0] }}">
+<meta name="twitter:image" content="">
 <!-- FIN CONFIGURACION METAS -->
 {% endblock %}
 
